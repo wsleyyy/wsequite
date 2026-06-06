@@ -1,0 +1,92 @@
+:root {
+    --bg-dark: #0b0f19;
+    --card-bg: #131c2e;
+    --accent-glow: rgba(0, 212, 255, 0.1);
+    --text-muted: #94a3b8;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: var(--bg-dark);
+    color: #f8fafc;
+    overflow-x: hidden;
+}
+
+/* Sleek Modern Navbar */
+.navbar {
+    background-color: rgba(11, 15, 25, 0.8) !important;
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Hero section with a modern gradient mesh look */
+.hero-section {
+    padding: 120px 0 80px 0;
+    background: radial-gradient(circle at top right, rgba(99, 102, 241, 0.15), transparent 40%),
+                radial-gradient(circle at bottom left, rgba(0, 212, 255, 0.1), transparent 40%);
+}
+
+/* Custom Tech Cards (Glassmorphism inspired) */
+.tech-card {
+    background-color: var(--card-bg);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    transition: all 0.3s ease-in-out;
+}
+
+.tech-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(0, 212, 255, 0.3);
+    box-shadow: 0 10px 30px var(--accent-glow);
+}
+
+/* Smooth Pill Badges */
+.badge-tech {
+    background: rgba(255, 255, 255, 0.06);
+    color: #00d4ff;
+    border: 1px solid rgba(0, 212, 255, 0.15);
+    padding: 6px 12px;
+    border-radius: 30px;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Premium Buttons */
+.btn-custom {
+    background: linear-gradient(135deg, #0072ff, #00d4ff);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 24px;
+    font-weight: 600;
+    transition: opacity 0.2s;
+}
+
+.btn-custom:hover {
+    opacity: 0.9;
+    color: white;
+}
+
+.btn-outline-custom {
+    background: transparent;
+    color: #00d4ff;
+    border: 1px solid rgba(0, 212, 255, 0.4);
+    border-radius: 8px;
+    transition: all 0.2s;
+}
+
+.btn-outline-custom:hover {
+    background: rgba(0, 212, 255, 0.1);
+    color: #00d4ff;
+    border-color: #00d4ff;
+}
+
+.text-muted-custom {
+    color: var(--text-muted);
+}
+
+footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    background-color: #080c14;
+}
