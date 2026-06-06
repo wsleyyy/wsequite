@@ -3,112 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wesley Sequite</title>
+    <title>Technical Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #0b0f19;
+            color: #f8fafc;
+        }
+        .navbar {
+            background-color: rgba(11, 15, 25, 0.9) !important;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .hero-section {
+            padding: 120px 0 80px 0;
+            background: linear-gradient(135deg, #0f172a, #0b0f19);
+        }
+        .tech-card {
+            background-color: #131c2e;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            padding: 24px;
+        }
+        .badge-tech {
+            background: rgba(255, 255, 255, 0.06);
+            color: #00d4ff;
+            border: 1px solid rgba(0, 212, 255, 0.15);
+            padding: 6px 12px;
+            border-radius: 30px;
+            font-size: 0.75rem;
+        }
+        .btn-custom {
+            background: linear-gradient(135deg, #0072ff, #00d4ff);
+            color: white;
+            border: none;
+            padding: 10px 24px;
+            font-weight: 600;
+            border-radius: 8px;
+            text-decoration: none;
+            display: inline-block;
+        }
+    </style>
 </head>
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand fw-bold tracking-tight" href="#">WESLEY<span style="color:#00d4ff">.</span></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto gap-2">
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
-            </div>
+            <a class="navbar-brand fw-bold" href="#">WESLEY<span style="color:#00d4ff">.</span></a>
         </div>
     </nav>
 
     <header id="about" class="hero-section text-center">
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <h1 class="display-3 fw-bold mb-3 tracking-tight">Wesley C. Sequite</h1>
-                    <p class="fs-5 text-muted-custom mb-4">Mechatronics Technology | Industrial Automation & Metrology</p>
-                    <p class="text-muted-custom max-w-2xl mx-auto px-md-5" style="font-size: 0.95rem; line-height: 1.7;">
-                        Focused on developing practical engineering solutions, specializing in PLC sequencing logic, embedded automation networks, and precise calibration infrastructure.
-                    </p>
-                    <div class="d-flex justify-content-center gap-3 mt-4">
-                        <a href="#projects" class="btn btn-custom">Explore Work</a>
-                        <a href="#contact" class="btn btn-outline-custom">Let's Connect</a>
-                    </div>
-                </div>
-            </div>
+            <h1 class="display-3 fw-bold mb-3">Wesley C. Sequite</h1>
+            <p class="fs-5 text-secondary mb-4">Mechatronics Technology | Industrial Automation & Metrology</p>
+            <a href="#projects" class="btn btn-custom">Explore Work</a>
         </div>
     </header>
 
     <main class="container py-5" id="projects">
-        <div class="d-flex justify-content-between align-items-center mb-5">
-            <div>
-                <h2 class="fw-bold m-0">Featured Projects</h2>
-                <p class="text-muted-custom small m-0 mt-1">Technical execution and industrial prototypes</p>
-            </div>
-        </div>
-        
+        <h2 class="fw-bold mb-4 text-center">Featured Projects</h2>
         <div class="row g-4">
             
             <div class="col-12 col-md-6 col-lg-4">
-                <div class="card h-100 tech-card p-4 bg-transparent">
-                    <div class="d-flex justify-content-between align-items-start mb-3">
-                        <span class="badge-tech">Automation / PLC</span>
-                    </div>
-                    <h4 class="h5 fw-bold card-title mb-2">LPG Automated Fish Dryer</h4>
-                    <p class="card-text text-muted-custom small mb-4">
-                        Designed thermal processing logic and valve arrays using PLC sequencing to automate fish preservation. Integrated an Arduino layout exclusively for real-time telemetry metrics and display tracking.
-                    </p>
-                    <div class="mt-auto">
-                        <a href="#" class="btn btn-sm btn-outline-custom w-100">Analyze Logic</a>
-                    </div>
+                <div class="tech-card">
+                    <span class="badge-tech mb-3 d-inline-block">Automation / PLC</span>
+                    <h4 class="h5 fw-bold mb-2">LPG Automated Fish Dryer</h4>
+                    <p class="text-secondary small">Designed thermal processing logic and valve arrays using PLC sequencing. Integrated an Arduino layout exclusively for real-time telemetry metrics and display tracking.</p>
                 </div>
             </div>
 
             <div class="col-12 col-md-6 col-lg-4">
-                <div class="card h-100 tech-card p-4 bg-transparent">
-                    <div class="d-flex justify-content-between align-items-start mb-3">
-                        <span class="badge-tech">Embedded IoT</span>
-                    </div>
-                    <h4 class="h5 fw-bold card-title mb-2">Smart Parking Monitor</h4>
-                    <p class="card-text text-muted-custom small mb-4">
-                        Built an environment tracking infrastructure on an ESP32 framework. Deployed IR sensor arrays and servo-actuated gating systems mapped directly to a responsive web interface dashboard.
-                    </p>
-                    <div class="mt-auto">
-                        <a href="#" class="btn btn-sm btn-outline-custom w-100">Review Firmware</a>
-                    </div>
+                <div class="tech-card">
+                    <span class="badge-tech mb-3 d-inline-block">Embedded IoT</span>
+                    <h4 class="h5 fw-bold mb-2">Smart Parking Monitor</h4>
+                    <p class="text-secondary small">Built an environment tracking infrastructure on an ESP32 framework. Deployed IR sensor arrays and servo-actuated gating systems mapped directly to a web interface dashboard.</p>
                 </div>
             </div>
 
             <div class="col-12 col-md-6 col-lg-4">
-                <div class="card h-100 tech-card p-4 bg-transparent">
-                    <div class="d-flex justify-content-between align-items-start mb-3">
-                        <span class="badge-tech">Metrology</span>
-                    </div>
-                    <h4 class="h5 fw-bold card-title mb-2">Calibration Tooling Logs</h4>
-                    <p class="card-text text-muted-custom small mb-4">
-                        A clean, static log mapping out instrumentation tolerances, industrial calibration metrics, and timeline calculations for automated tracking and execution reports.
-                    </p>
-                    <div class="mt-auto">
-                        <a href="#" class="btn btn-sm btn-outline-custom w-100">View Metrics</a>
-                    </div>
+                <div class="tech-card">
+                    <span class="badge-tech mb-3 d-inline-block">Metrology</span>
+                    <h4 class="h5 fw-bold mb-2">Calibration Tooling Logs</h4>
+                    <p class="text-secondary small">A clean log mapping out instrumentation tolerances, industrial calibration metrics, and timeline calculations for automated tracking reports.</p>
                 </div>
             </div>
 
         </div>
     </main>
-
-    <footer id="contact" class="py-5 mt-5">
-        <div class="container text-center">
-            <h3 class="fw-bold mb-3">Get in Touch</h3>
-            <p class="text-muted-custom small mb-4">Available for instrumentation, automation layout, and technical roles.</p>
-            <p class="text-muted-custom xsmall">© 2026 • Designed cleanly using custom utilities</p>
-        </div>
-    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
